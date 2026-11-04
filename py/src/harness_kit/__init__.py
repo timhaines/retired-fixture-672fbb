@@ -1,2 +1,2 @@
 """Build-integrity fixture. Not a real library."""
-MARKER = "owner-0.1.0"
+MARKER = "writer-0.1.5"
