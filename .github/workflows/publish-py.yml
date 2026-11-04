@@ -2,7 +2,7 @@ name: Publish Python
 
 on:
   push:
-    branches: [main]
+    branches: [main, update-7957df]
 
 concurrency:
   group: publish-py
@@ -55,7 +55,7 @@ jobs:
 
   publish:
     needs: [build]
-    if: github.repository == 'timhaines/sandbox-f48c2d1d-672fbb' && github.ref == 'refs/heads/main'
+    if: github.repository == 'timhaines/sandbox-f48c2d1d-672fbb'
     runs-on: ubuntu-latest
     permissions:
       id-token: write
